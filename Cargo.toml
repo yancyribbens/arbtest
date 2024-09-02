@@ -14,8 +14,9 @@ exclude = [".github/", "rustfmt.toml"]
 members = ["xtask"]
 
 [dependencies]
-arbitrary = "1.3.0"
+#arbitrary = { git = "https://github.com/yancyribbens/arbitrary.git", rev = "5d06035ac82aaec6add86f3c781a6c220ba00052", features = ["derive"] }
+arbitrary = { git = "https://github.com/sivizius/arbitrary.git", rev = "c28e5fa123d6410cf810373bed5335386e45dae7", features = ["derive"] }
 
 [dev-dependencies]
-arbitrary = { version = "1.3.0", features = ["derive" ] }
+arbitrary = { git = "https://github.com/sivizius/arbitrary.git", rev = "c28e5fa123d6410cf810373bed5335386e45dae7", features = ["derive"] }
 regex = { version = "0.1.5", package = "regex-lite" }
